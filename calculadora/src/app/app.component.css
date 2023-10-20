@@ -1,0 +1,51 @@
+.calculadora{
+ max-inline-size: 22rem;
+ margin-inline-start: auto;
+ margin-inline-end: auto;
+ margin-block-start: 2em;
+ background: #383443;
+ padding-top: 60px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+ width: 300px;
+ border-radius: 10px;
+ box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25), 0px 2px 4px 0px rgba(0,0,0,0.12);
+}
+.btn-inserts{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: hsl(208, 25%, 90%); 
+}
+.btn-insert{
+  padding-block-start: 1rem;
+  color: azure;
+  text-align: center;
+  scroll-padding-block-start: 0.5rem;
+  padding-block-end: 1rem;
+  padding-block-start: 1rem;
+  padding-inline-end: 1.25rem;
+  padding-inline-start: 1.25rem;
+  font-size: 1.5rem;
+  background:#BBAEAE;
+}
+
+.display{
+  overflow: auto;
+  border-radius: 8px;
+  font-size: 40px;
+  text-align: end;
+  background: hsl(202, 11%, 50%);
+  color: hsl(255, 100%, 100%);
+  padding-block-start: 0.25rem;
+  padding-block-end: 0.25rem;
+  padding-inline-end: 0.75rem;
+}
+.btn-insert-enter{
+  grid-column: 4 / 5;
+  grid-row: 2 / span 4;
+  background:#E38B24;
+}
+.btn-insert-operator{
+  background: hsl(208, 25%, 80%);
+}
