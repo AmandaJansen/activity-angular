@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,8 +11,15 @@ export class AppComponent {
     //console.log(this.stringToValue);
   }
 resultOperation(){
-  this.stringToValue = eval(this.stringToValue);
-  //console.log(this.stringToValue);
+  if(this.stringToValue != ''){
+    const result = eval(this.stringToValue);
+    if(isFinite(result)){
+      this.stringToValue = result.toString();
+         
+  }else{
+alert(' Invalid');
+  }
+}
 }
 clearValue(){
   this.stringToValue = "";

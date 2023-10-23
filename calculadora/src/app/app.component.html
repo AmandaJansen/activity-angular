@@ -1,16 +1,9 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
 <body>
 
 <div class="calculadora">
       
-    <div class="display" *ngIf="!stringToValue">0</div>
+    <div class="display" id="displayResult" *ngIf="!stringToValue">0</div>
     <div class="display" *ngIf="stringToValue">{{stringToValue}}</div>
 
       <div class="btn-inserts">
@@ -24,15 +17,11 @@
       <button  class="btn-insert" (click)="takeInput('7')">7</button>
       <button  class="btn-insert" (click)="takeInput('8')">8</button>
       <button  class="btn-insert" (click)="takeInput('9')" >9</button>
-       
-    
-      
+             
       <button  class="btn-insert" (click)="takeInput('4')">4</button>
       <button  class="btn-insert" (click)="takeInput('5')">5</button>
       <button  class="btn-insert" (click)="takeInput('6')">6</button>
         
-        
-     
       <button class="btn-insert btn-insert-enter" (click)="resultOperation()">=</button>
       <button  class="btn-insert" (click)="takeInput('1')">1</button>
       <button  class="btn-insert" (click)="takeInput('2')">2</button>
